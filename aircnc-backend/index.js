@@ -21,7 +21,7 @@ app.get('/ping', (req, res) => {
 
 async function startDatabase(){
     const { DB_USER, DB_PASS, DB_NAME } = process.env
-    const uri = `mongodb+srv://${DB_USER}:${DB_PASS}@omnistack9.qwkirlk.mongodb.net/${DB_NAME}?retryWrites=true&w=majority&appName=omnistack9`;
+    const uri = `mongodb+srv://${DB_USER}:${DB_PASS}@cluster0.x7eptrg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 
     try {
         await mongoose.connect(uri);
